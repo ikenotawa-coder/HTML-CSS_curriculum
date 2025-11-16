@@ -1,49 +1,66 @@
+/* ==================================================
+  style.css
+================================================== */
+
 @charset "UTF-8";
+
+/*----------------------------------------------------
+  all
+----------------------------------------------------*/
 
 * {
   font-family:Arial, Helvetica, sans-serif;
 }
 
+/*----------------------------------------------------
+  .c-header
+----------------------------------------------------*/
+
 .c-header__title {
   font-size: 24px;
   font-weight: bold;
-  margin: 64px auto 40px auto;
   text-align: center;
 }
 
+/*----------------------------------------------------
+  pickUp
+---------------------------------------------------- */
+
 .c-pickUp {
-  margin: 0 auto;
-  width: 41%;
+  width: 90%;
+  max-width: 700px;
 }
+
+/*
+  .c-pickUp__title
+---------------------------------------------------- */
 
 .c-pickUp__title {
-  align-items: center;
-  background-color: #8c97ff;
-  border-radius: 20px;
-  color: #fff;
   display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 16px;
   padding: 2px 11px;
+  border-radius: 15px;
+  background-color: #8c97ff;
+  color: #fff;
+  font-size: 16px;
 }
 
+/*
+  .c-pickUp__section
+----------------------------------------------------*/
+
 .c-pickUp__section {
+  padding: 28px;
   border: 1.5px solid #000;
   border-radius: 20px;
-  padding: 28px;
   box-shadow: 12px 12px rgba(0, 0, 255, 0.2);
 }
 
 .c-pickUp__picture {
   display: block;
-  margin: 0 auto 20px auto;
   max-width: 100%;
 }
 
-.c-pickUp__item--smartWatch {
-  margin-bottom: 12px;
-}
+/* .c-pickUp__item */
 
 .c-pickUp__itemName {
   display: inline-block;
@@ -53,35 +70,29 @@
 }
 
 .c-pickUp__itemLogo {
-  margin-left: 7px;
+  display: inline;
   vertical-align: middle;
 }
 
 .c-pickUp__itemText {
   font-size: 14px;
-  margin-bottom: 8px;
 }
 
-
-.o-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+/* .c-pickUp__itemDetails */
 
 .c-pickUp__itemDetails {
-  margin-bottom: 24px;
   text-align: left;
 }
 
 .c-pickUp__detail {
-  background-color: #eee;
   display: inline-block;
-  font-size : 12px;
-  margin-right: 8px;
+  background-color: #eee;
   padding: 0 4px;
+  font-size : 12px;
   vertical-align: middle;
 }
+
+/* .c-pickUp__price */
 
 .c-pickUp__price {
   font-size: 16px;
@@ -89,18 +100,68 @@
 
 .c-pickUp__priceNote {
   font-size: 12px;
+}
+
+/* .c-pickUp__tags */
+
+.c-pickUp__tag--link {
+  font-size: 14px;
+  color: #8c97ff;
+}
+
+/*----------------------------------------------------
+  utility
+----------------------------------------------------*/
+
+.u-section-spacing {
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.u-mx-auto {
+  margin: 0 auto;
+}
+
+.u-mb-16 {
+  margin-bottom: 16px;
+}
+
+.u-mt-0 {
+  margin-top: 0;
+}
+
+.u-mb-20 {
+  margin-bottom: 20px;
+}
+
+.u-mb-12 {
+  margin-bottom: 12px;
+}
+
+.u-ml-7 {
+  margin-left: 7px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mb-24 {
+  margin-bottom: 24px;
+}
+
+.u-mr-5 {
+  margin-right: 5px;
+}
+
+.u-mr-2 {
   margin-right: 2px;
 }
 
-.c-pickUp__tags {
+.u-ml-0 {
   margin-left: 0;
 }
 
-.c-pickUp__tag {
+.u-mt-3 {
   margin-top: 3px;
-}
-
-.c-pickUp__tag--link {
-  color: #8c97ff;
-  font-size: 14px;
 }
