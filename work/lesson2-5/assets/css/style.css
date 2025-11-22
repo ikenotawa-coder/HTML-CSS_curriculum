@@ -16,7 +16,7 @@
   .l-header
 ----------------------------------------------------*/
 
-.l-header__title {
+.c-header__title {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -36,7 +36,7 @@
   .c-pickUp__title
 ---------------------------------------------------- */
 
-.p-pickUp__title {
+.c-pickUp__title {
   display: inline-block;
   margin-bottom: 16px;
   padding: 2px 11px;
@@ -47,7 +47,7 @@
 }
 
 /*
-  .c-pickUp__section
+  .p-pickUp__section
 ----------------------------------------------------*/
 
 .p-pickUp__section {
@@ -57,7 +57,7 @@
   box-shadow: 12px 12px rgba(0, 0, 255, 0.2);
 }
 
-.p-pickUp__picture {
+.c-pickUp__picture {
   display: block;
   margin: 0 auto 20px auto;
   max-width: 100%;
@@ -65,35 +65,34 @@
 
 /* .p-pickUp__item */
 
-.p-pickUp__item--smartWatch{
+.p-pickUp__item{
   margin-bottom: 12px;
 }
 
-.p-pickUp__itemName {
+.c-pickUp__itemName {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
   vertical-align: bottom;
 }
 
-.p-pickUp__itemLogo {
+.c-pickUp__itemLogo {
   display: inline;
   margin-left: 7px;
   vertical-align: middle;
 }
 
-.p-pickUp__itemText {
+.c-pickUp__itemText {
   margin-bottom: 8px;
   font-size: 14px;
 }
 
-/* .p-pickUp__itemDetails */
-.p-pickUp__itemDetails {
+.p-pickupDetail__list {
   margin-bottom: 24px;
   text-align: left;
 }
 
-.p-pickUp__detail {
+.p-pickupDetail__listItem {
   display: inline-block;
   margin-right: 5px;
   padding: 0 4px;
@@ -106,22 +105,22 @@
   margin-right: 0;
 }
 
-/* .p-pickUp__priceValue */
+/* .c-price */
 
-.p-pickUp__priceValue {
+.c-price {
   font-size: 16px;
 }
 
-.p-pickUp__priceNote {
+.c-smallText {
   margin-right: 2px;
   font-size: 12px;
 }
 
-.p-pickUp__priceNote:last-child {
+.c-smallText:last-child {
   margin-right: 0;
 }
 
-/* .c-pickUp__tags */
+/* .p-pickupTag__list */
 .c-link {
   font-size: 14px;
   color: #8c97ff;
