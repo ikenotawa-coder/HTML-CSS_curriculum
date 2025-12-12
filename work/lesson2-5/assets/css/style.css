@@ -13,7 +13,7 @@
 ----------------------------------------------------*/
 
 .l-body {
-  padding: 64px 0;
+  margin: 64px auto 160px auto;
 }
 
 /*----------------------------------------------------
@@ -132,7 +132,7 @@
 ---------------------------------------------------- */
 
 .p-new {
-  margin: 96px auto 160px;
+  margin: 96px auto;
   max-width: 1200px;
 }
 
@@ -155,13 +155,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  row-gap: 32px;
 }
 
 /* .p-new__section */
 
 .p-new__section {
   display: flex;
+  max-width: 276px;
   padding: 16px;
   border: 1.5px solid #000;
   border-radius: 20px;
@@ -175,6 +176,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   margin-left: 16px;
 }
 
@@ -194,6 +196,7 @@
 .c-detailButton:hover {
   background-color: #0f0f0f;
   color: #fff;
+  cursor: pointer;
 }
 
 /*----------------------------------------------------
