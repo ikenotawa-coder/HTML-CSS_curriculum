@@ -13,7 +13,7 @@
 ----------------------------------------------------*/
 
 .l-body {
-  margin: 64px auto 160px auto;
+  padding: 64px 0 160px;
 }
 
 /*----------------------------------------------------
@@ -88,10 +88,14 @@
   vertical-align: middle;
 }
 
+/* .c-pickUp__itemText */
+
 .c-pickUp__itemText {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
+/* .p-pickupDetail__list */
 
 .p-pickupDetail__list {
   margin-bottom: 24px;
@@ -121,7 +125,8 @@
   font-size: 12px;
 }
 
-/* .p-pickupTag__l1ist */
+/* .c-link */
+
 .c-link {
   font-size: 14px;
   color: #8c97ff;
@@ -132,11 +137,13 @@
 ---------------------------------------------------- */
 
 .p-new {
-  margin: 96px auto;
+  margin: 96px auto 0;
   max-width: 1200px;
 }
 
-/* .c-new__title */
+/*
+  .c-new__title
+---------------------------------------------------- */
 
 .c-new__title {
   display: inline-block;
