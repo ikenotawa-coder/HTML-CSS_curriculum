@@ -4,12 +4,16 @@
 
 @charset "UTF-8";
 
+* {
+  box-sizing: border-box;
+}
+
 /*----------------------------------------------------
   .l-body
 ----------------------------------------------------*/
 
 .l-body {
-  padding: 64px 0;
+  padding: 64px 0 160px;
 }
 
 /*----------------------------------------------------
@@ -84,10 +88,14 @@
   vertical-align: middle;
 }
 
+/* .c-pickUp__itemText */
+
 .c-pickUp__itemText {
   margin-bottom: 8px;
   font-size: 14px;
 }
+
+/* .p-pickupDetail__list */
 
 .p-pickupDetail__list {
   margin-bottom: 24px;
@@ -117,10 +125,85 @@
   font-size: 12px;
 }
 
-/* .p-pickupTag__list */
+/* .c-link */
+
 .c-link {
   font-size: 14px;
   color: #8c97ff;
+}
+
+/*----------------------------------------------------
+  new
+---------------------------------------------------- */
+
+.p-new {
+  margin: 96px auto 0;
+  max-width: 1200px;
+}
+
+/*
+  .c-new__title
+---------------------------------------------------- */
+
+.c-new__title {
+  display: inline-block;
+  padding: 2px 11px;
+  border-radius: 15px;
+  background-color: #7fe6a8;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*
+  .p-new__itemTable
+----------------------------------------------------*/
+
+.p-new__itemTable {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+
+/* .p-new__section */
+
+.p-new__section {
+  display: flex;
+  max-width: 276px;
+  padding: 16px;
+  border: 1.5px solid #000;
+  border-radius: 20px;
+  box-shadow: 8px 8px rgba(140,255,186,1);
+  flex: 1 1 calc((100% - 32px * 3) / 4);
+}
+
+/* .p-new__detail */
+
+.p-new__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.c-new__itemName {
+  font-size: 12px;
+}
+
+.c-detailButton {
+  width: 100%;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.c-detailButton:hover {
+  background-color: #0f0f0f;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*----------------------------------------------------
@@ -141,4 +224,12 @@
 
 .u-mr-2 {
   margin-right: 2px;
+}
+
+.u-mt-3 {
+  margin-top: 3px;
+}
+
+.u-mb-10 {
+  margin-bottom: 10px;
 }
