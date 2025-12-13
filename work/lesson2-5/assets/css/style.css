@@ -188,6 +188,7 @@
 }
 
 .c-new__itemName {
+  font-weight: normal;
   font-size: 12px;
 }
 
@@ -196,11 +197,132 @@
   border-radius: 15px;
   background-color: #f0f0f0;
   color: #000;
-  padding: 5px 0;
+  padding: 6px 0;
   font-size: 12px;
 }
 
 .c-detailButton:hover {
+  background-color: #0f0f0f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------
+  sale
+---------------------------------------------------- */
+
+.p-sale {
+  max-width: 1200px;
+  margin: 96px auto 0;
+}
+
+/*
+  .c-sale__title
+---------------------------------------------------- */
+
+.c-sale__title {
+  display: inline-block;
+  padding: 2px 11px;
+  border-radius: 15px;
+  background-color: #ffe070;
+  color: #fff;
+  font-size: 16px;
+}
+
+/*
+  .p-sale__itemTable
+---------------------------------------------------- */
+
+.p-sale__itemTable {
+  display: flex;
+  overflow-x: auto;
+}
+
+/* .p-sale__section
+------------------------------------------ */
+
+.p-sale__section {
+  position: relative;
+  max-width: 200px;
+  margin: 0 36px 20px 0;
+  padding: 20px;
+  border: 1.5px solid #000;
+  border-radius: 20px;
+  box-shadow: 8px 8px rgba(255,244,140,1);
+  font-size: 0;
+}
+
+.p-sale__section:last-child {
+  margin-right: 0;
+}
+
+/* .c-saleBadge */
+
+.c-saleBadge {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  left: 13px;
+  width: 77px;
+  padding: 3px 14px;
+  background-color: #fb5b55;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* .c-overlay .c-soldOut */
+
+.c-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.c-soldOut {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+}
+
+/* .c-sale__itemName */
+
+.c-sale__itemName {
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* .c-salePrice */
+
+.c-salePrice {
+  color: #fb5b55;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.c-sale__smallText {
+  font-size: 12px;
+}
+
+/* .c-sale__detailButton */
+
+.c-sale__detailButton {
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 13px;
+}
+
+.c-sale__detailButton:hover {
   background-color: #0f0f0f;
   color: #fff;
   cursor: pointer;
@@ -222,8 +344,8 @@
   margin-left: 7px;
 }
 
-.u-mr-2 {
-  margin-right: 2px;
+.u-mr-3 {
+  margin-right: 3px;
 }
 
 .u-mt-3 {
@@ -232,4 +354,16 @@
 
 .u-mb-10 {
   margin-bottom: 10px;
+}
+
+.u-mt-15 {
+  margin-top: 15px;
+}
+
+.u-mb-8 {
+  margin-bottom: 8px;
+}
+
+.u-mt-12 {
+  margin-top: 12px;
 }
