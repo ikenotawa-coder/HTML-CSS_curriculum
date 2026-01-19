@@ -333,10 +333,10 @@
 }
 
 /*
-  .c-ranking__title
+  .cc-rankingTitle
 ---------------------------------------------------- */
 
-.c-ranking__title {
+.c-rankingTitle {
   display: inline-block;
   padding: 2px 11px;
   border-radius: 15px;
@@ -481,57 +481,57 @@
   padding-bottom: 13px;
 }
 
-/* c-ranking__itemName */
+/* c-rankingItem */
 
-.p-ranking__card:nth-child(1) .c-ranking__itemName {
+.p-ranking__card:nth-child(1) .rankingItem {
   padding-top: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.p-ranking__card:nth-child(2) .c-ranking__itemName {
+.p-ranking__card:nth-child(2) .rankingItem {
   padding-top: 20px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.p-ranking__card:nth-child(3) .c-ranking__itemName {
+.p-ranking__card:nth-child(3) .rankingItem {
   padding-top: 15px;
 }
 
-.p-ranking__card:nth-child(4) .c-ranking__itemName,
-.p-ranking__card:nth-child(5) .c-ranking__itemName {
+.p-ranking__card:nth-child(4) .rankingItem,
+.p-ranking__card:nth-child(5) .rankingItem {
   padding-top: 8px;
 }
 
-.p-ranking__card:nth-child(6) .c-ranking__itemName {
+.p-ranking__card:nth-child(6) .rankingItem {
   padding-top: 20px;
   font-size: 12px;
 }
-.p-ranking__card:nth-child(7) .c-ranking__itemName,
-.p-ranking__card:nth-child(8) .c-ranking__itemName {
+.p-ranking__card:nth-child(7) .rankingItem,
+.p-ranking__card:nth-child(8) .rankingItem {
   padding-top: 10px;
   font-size: 12px;
 }
 
-/* .p-rankingTag__list */
+/* .p-ranking__list */
 
-.p-rankingTag__list {
+.p-ranking__list {
   letter-spacing: -1px;
 }
 
-.p-ranking__card:nth-child(6) .p-rankingTag__list {
+.p-ranking__card:nth-child(6) .p-ranking__list {
   letter-spacing: -0.5px;
 }
 
-.p-ranking__card:nth-child(7) .p-rankingTag__list,
-.p-ranking__card:nth-child(8) .p-rankingTag__list {
+.p-ranking__card:nth-child(7) .p-ranking__list,
+.p-ranking__card:nth-child(8) .p-ranking__list {
   letter-spacing: -1.5px;
 }
 
-/* .p-rankingTag__listItem */
+/* .p-ranking__listItem */
 
-.p-rankingTag__listItem {
+.p-ranking__listItem {
   display: inline;
 }
 
