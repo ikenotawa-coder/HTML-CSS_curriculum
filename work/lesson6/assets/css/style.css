@@ -37,7 +37,7 @@
   padding-left: 7px;
 }
 
-/* .c-icon */
+/***   .c-icon   ****/
 
 .c-icon {
   font-size: 30px;
@@ -59,7 +59,14 @@
 .l-header__right {
   display: flex;
   padding-right: 9px;
-  gap: 9px;
+}
+
+.p-menu__item {
+  margin-right: 9px;
+}
+
+.p-menu__item:last-child {
+  margin-right: 0;
 }
 
 /*----------------------------------------------------
@@ -81,8 +88,7 @@
   gap: 16px;
 }
 
-.p-avatar--left,
-.p-avatar--right {
+.p-avatar {
   display: flex;
   justify-content: center;
   width: 50px;
@@ -101,9 +107,6 @@
   font-size: 60px;
   color: #000000;
 }
-
-/*  .p-chatItem--left
----------------------------------------------------- */
 
 /***   .p-balloon   ****/
 
@@ -135,9 +138,6 @@
 .p-balloon__text {
   font-size: 14px;
 }
-
-/*  .p-chatItem--right
----------------------------------------------------- */
 
 /* .p-balloon--right  */
 
