@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body class="l-body">
-    <header class="l-header p-header">
-      <div class="p-header__wrapper">
-        <input type="checkbox" id="menu-toggle" class="p-header__checkbox">
-        <label for="menu-toggle" class="p-header__burger" aria-label="メニューを開く">
+    <header class="l-header">
+      <div class="p-header">
+        <input type="checkbox" class="p-header__checkBox" id="menu-toggle">
+        <label class="p-header__burger" for="menu-toggle">
           <span class="p-header__burgerLine"></span>
         </label>
-        <nav id="global-nav" class="p-header__nav" aria-label="グローバルナビ">
+        <nav class="p-header__nav" aria-label="グローバルナビ">
           <ul class="p-header__navList">
             <li><a class="p-header__navItem" href="#">home</a></li>
             <li><a class="p-header__navItem" href="#">about</a></li>
@@ -28,6 +28,8 @@
           </ul>
         </nav>
       </div>
+    </header>
+    <main class="l-main">
       <div class="p-keyVisual">
         <img class="p-keyVisual__logo" src="assets/images/logo_company.png" alt="CONVICTION ロゴ">
         <img class="p-keyVisual__image" src="assets/images/img_keyVisual.jpeg" alt="メイン画像">
@@ -36,58 +38,56 @@
           <span class="p-keyVisual__textLine">Site</span>
         </h1>
       </div>
-    </header>
-    <main class="l-main">
-      <section class="p-about">
-        <h2 class="c-title">ABOUT</h2>
-        <p class="c-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velitest facilis maiores, perspiciatis</p>
-        <div class="p-about__imageWrapper">
+      <section class="p-content">
+        <h2 class="c-title u-mb-30">ABOUT</h2>
+        <p class="c-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velitest facilis maiores, perspiciatis</p>
+        <div class="p-about">
           <img class="p-about__image" src="assets/images/img_about_01.jpeg" alt="気球の写真">
           <img class="p-about__image" src="assets/images/img_about_02.jpeg" alt="滝の写真">
           <img class="p-about__image" src="assets/images/img_about_03.jpeg" alt="ボートの写真">
           <img class="p-about__image" src="assets/images/img_about_04.jpeg" alt="人とラクダの写真">
         </div>
       </section>
-      <section class="p-work">
-        <h2 class="c-title">WORK</h2>
-        <p class="c-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velitest facilis maiores, perspiciatis</p>
-        <ul class="p-work__list">
+      <section class="p-content">
+        <h2 class="c-title u-mb-30">WORK</h2>
+        <p class="c-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velitest facilis maiores, perspiciatis</p>
+        <ul class="p-work">
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_01.png" alt="Web Site アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">Web Site</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_01.png" alt="Web Site アイコン"></a>
+            <h3 class="p-work__title">Web Site</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_02.png" alt="Download アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">Download</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_02.png" alt="Download アイコン"></a>
+            <h3 class="p-work__title">Download</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_03.png" alt="Blog アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">Blog</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_03.png" alt="Blog アイコン"></a>
+            <h3 class="p-work__title">Blog</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_04.png" alt="SVG アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">SVG</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_04.png" alt="SVG アイコン"></a>
+            <h3 class="p-work__title">SVG</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_05.png" alt="Cloud アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">Cloud</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_05.png" alt="Cloud アイコン"></a>
+            <h3 class="p-work__title">Cloud</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
           <li class="p-work__item">
-            <a class="p-work__icon" href="#"><img src="assets/images/icon_06.png" alt="Storage アイコン" class="p-work__image"></a>
-            <h3 class="p-work__name">Storage</h3>
-            <p class="p-work__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <a class="p-work__icon" href="#"><img class="p-work__image" src="assets/images/icon_06.png" alt="Storage アイコン"></a>
+            <h3 class="p-work__title">Storage</h3>
+            <p class="p-work__lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           </li>
         </ul>
       </section>
-      <section class="p-blog">
-        <h2 class="c-title">BLOG</h2>
-        <p class="c-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis</p>
-        <ul class="p-blog__list">
+      <section class="p-content">
+        <h2 class="c-title u-mb-30">BLOG</h2>
+        <p class="c-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis</p>
+        <ul class="p-blog">
           <li class="p-blog__item">
             <img class="p-blog__image" src="assets/images/img_blog_01.jpeg" alt="PCの写真">
             <div class="p-blog__content">
