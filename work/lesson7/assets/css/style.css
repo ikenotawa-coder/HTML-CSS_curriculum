@@ -110,7 +110,7 @@
 .p-keyVisual__textLine {
   display: block;
   line-height: 2.0;
-  font-size: clamp(30px, 6vw, 80px);
+  font-size: clamp(40px, 5vw, 80px);
 }
 
 /*--- about ---*/
@@ -125,14 +125,14 @@ background-color: #EFEFEF;
 
 .c-title {
   color: #5A5A5A;
-  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(30px, 3.5vw, 60px);
   text-align: center;
 }
 
 .c-lead {
   display: block;
   color: #848484;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 2vw, 28px);
   text-align: center;
 }
 
@@ -193,12 +193,12 @@ background-color: #EFEFEF;
 
 .p-work__title {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .p-work__lead {
   color: #848484;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /*--- blog --- */
@@ -301,7 +301,7 @@ background-color: #EFEFEF;
   }
 
   .p-keyVisual__textLine + .p-keyVisual__textLine {
-      margin-left: 15px;
+    margin-left: 15px;
   }
 
   /*--- PC about ---*/
