@@ -1,0 +1,412 @@
+/* ==================================================
+  style.css
+================================================== */
+
+@charset "UTF-8";
+
+* {
+  font-weight: 300;
+}
+
+/*----------------------------------------------------
+  header
+----------------------------------------------------*/
+
+.p-header__checkBox {
+  display: none;
+}
+
+.p-header__checkBox:checked ~ .p-header__nav {
+  right: 0;
+}
+
+.p-header__burger {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.p-header__burgerLine,
+.p-header__burgerLine:before,
+.p-header__burgerLine:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.p-header__burgerLine:before {
+  bottom: 10px;
+}
+
+.p-header__burgerLine:after {
+  top: 10px;
+}
+
+.p-header__nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 150px;
+  padding: 20px;
+  background-color: #0009;
+  transition: right 0.3s ease;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.p-header__navItem {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.p-header__navItem:hover {
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------
+  main
+----------------------------------------------------*/
+
+/*--- keyVisual ---*/
+
+.p-keyVisual {
+  position: relative;
+  height: 100svh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.p-keyVisual__logo {
+  display: none;
+}
+
+.p-keyVisual__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-keyVisual__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.p-keyVisual__textLine {
+  display: block;
+  line-height: 2.0;
+  font-size: clamp(40px, 5vw, 80px);
+}
+
+/*--- about ---*/
+
+.p-content {
+  padding: 20% 15px;
+}
+
+.p-content:nth-of-type(2) {
+background-color: #EFEFEF;
+}
+
+.c-title {
+  color: #5A5A5A;
+  font-size: clamp(30px, 3.5vw, 60px);
+  text-align: center;
+}
+
+.c-lead {
+  display: block;
+  color: #848484;
+  font-size: clamp(18px, 2vw, 28px);
+  text-align: center;
+}
+
+.c-lead::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 40px auto 60px;
+  background-color: #FCC72C;
+}
+
+.p-about__image {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.p-about__image:first-of-type {
+  margin-top: 0;
+}
+
+/*--- work ---*/
+
+.p-work {
+  position: relative;
+  width: 100%;
+  background-color: #EFEFEF;
+}
+
+.p-work__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.p-work__item:first-child {
+  margin-top: 0;
+}
+
+.p-work__icon {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.p-work__icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.p-work__image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.p-work__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.p-work__lead {
+  color: #848484;
+  font-size: 15px;
+}
+
+/*--- blog --- */
+
+.p-blog__item {
+  margin-top: 40px;
+}
+
+.p-blog__item:first-child {
+  margin-top: 0;
+}
+
+.p-blog__image {
+  display: block;
+  width: 100%;
+}
+
+.p-blog__title {
+  margin: 20px 0 20px;
+  color: #5A5A5A;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 350;
+}
+
+.p-blog__excerpt {
+  margin-bottom: 50px;
+  color: #848484;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.c-button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 3px;
+  background-color: #FCC72C;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.c-button__navItem:hover {
+  cursor: pointer;
+}
+
+/*----------------------------------------------------
+  PC  media query
+----------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+  /* PC header
+  -------------------------------------------------*/
+
+  .p-header {
+    position : fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .p-header__checkBox,
+  .p-header__burger {
+    display: none;
+  }
+
+  .p-header__nav {
+    position: static;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .p-header__navList {
+    display: flex;
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    gap: 30px;
+  }
+
+  .p-header__navItem {
+    font-size: clamp(16px, 2vw, 30px);
+  }
+
+  /* PC main
+  -------------------------------------------------*/
+
+  /*--- PC keyVisual ---*/
+
+  .p-keyVisual__logo {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 90px;
+  }
+
+  .p-keyVisual__textLine {
+    display: inline;
+  }
+
+  .p-keyVisual__textLine + .p-keyVisual__textLine {
+    margin-left: 15px;
+  }
+
+  /*--- PC about ---*/
+
+  .p-content {
+    padding: 10% 5%;
+  }
+
+  .c-lead {
+    font-size: clamp(20px, 2vw, 30px);
+  }
+
+  .p-about__title {
+    font-size: 30px;
+  }
+
+  .p-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5% 5%;
+  }
+
+  .p-about__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0;
+    aspect-ratio: 7 / 3;
+  }
+
+  .p-about__image:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+
+  .p-about__image:nth-child(2) {
+    grid-column: 3 / 4;
+  }
+
+  .p-about__image:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .p-about__image:nth-child(4) {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  /*--- PC work ---*/
+
+  .p-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .p-work__item:first-child {
+    margin-top: 40px;
+  }
+
+  /*--- PC blog ---*/
+
+  .p-blog__item {
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .p-blog__item:first-child {
+    margin-top: 0;
+  }
+
+  .p-blog__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .p-blog__item:nth-child(2) .p-blog__content {
+    text-align: right;
+  }
+
+  .p-blog__image {
+    display: block;
+    max-width: 400px;
+    margin-top: 0;
+  }
+
+  .p-blog__title {
+    margin: 0 0 15px;
+  }
+
+  .c-button {
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .c-button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+/*----------------------------------------------------
+  utility
+----------------------------------------------------*/
+
+.u-mb-30 {
+  margin-bottom: 30px;
+}
